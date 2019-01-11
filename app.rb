@@ -16,6 +16,9 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     
     @phrase * @number
+  end
+  
+  get '' do
     
   end
 end
