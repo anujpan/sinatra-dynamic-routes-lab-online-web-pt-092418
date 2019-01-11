@@ -33,6 +33,17 @@ class App < Sinatra::Base
     @n1 = params[:number1]
     @n2 = params[:number2]
     
-    
+    case @o
+      when "add"
+      "#{@num1 + @num2}"
+      when "subtract"
+      "#{@num1 - @num2}"
+      when "multiply"
+      "#{@num1 * @num2}"
+      when "divide"
+      "#{@num1 / @num2}"
+    else
+      "not a valid method"
+    end    
   end
 end
