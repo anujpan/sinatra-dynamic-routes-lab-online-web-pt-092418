@@ -17,10 +17,9 @@ class App < Sinatra::Base
     
     "#{ 
     @number.to_i.times do 
-      @phrase
+      return @phrase
     end
     }" 
     
-    @phrase
   end
 end
