@@ -18,8 +18,9 @@ class App < Sinatra::Base
     "#{ 
     @array = []
     @number.to_i.times do 
-      @phrase
+      @array.push(@phrase)
     end
+    @array
     }" 
     
   end
